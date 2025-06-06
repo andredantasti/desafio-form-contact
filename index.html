@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form - By Andre Dantas</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Contact Us</h1>
+
+      <form action="">
+      <div class="first-last-name">
+          <div class="name">
+          <label for="name">First Name *</label>
+          <input type="text" name="name" id="name" class="campos"/>
+          <p class="error error-hidden">This field is required</p>
+          </div>
+
+          <div class="last-name">
+          <label for="last-name">Last Name *</label>
+          <input type="text" name="last-name" id="last-name" class="campos"/>
+          <p class="error error-hidden">This field is required</p>
+          </div>
+      </div>
+
+      <div class="div-email">
+        <label for="email">Email Address *</label>
+        <input type="email" name="email" id="email" class="email"/>
+        <p class="error error-hidden">Please enter a valid email address</p>
+      </div>
+
+      
+      
+      <p>Query Type *</p>
+
+      <div class="div-tipo">       
+       <label class="label"><input
+          type="radio"
+          id="radio1"
+          name="opcao"
+          value="General Enquiry"/>General Enquiry</label> 
+        
+       <label class="label"> <input type="radio" name="opcao" id="radio2" value="Support General" />Suppor Request</label>
+       
+      </div>
+      <p class="error error-hidden">Please a query type</p>
+
+      <div class="text-area">
+      <p>  <label for="message">Message *</label> </p>
+        <textarea name="message" id="message-text" class="campos"></textarea>
+      <p class="error error-hidden">This field is required</p>
+      </div>
+
+      <div>
+  <input type="checkbox" name="consentimento" id="consent" />
+<label for="consent">I consent to being contacted by the team *</label>
+<p class="error error-hidden" id="consent-error">To submit this form, please consent to being contacted</p>
+</div>
+      <button type="submit" id="btn-submit">Submit</button>
+      </form>
+    </main>
+<div id="success-message" class="success-hidden">
+  <p class="success-title"><img src="assets/images/icon-success-check.svg" alt="Check">Message Sent!</p>
+  <p class="success-text">Thanks for completing the form. We'll be in touch soon.</p>
+</div>
+
+  <script src="script.js"></script>
+  </body>
+</html>

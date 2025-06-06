@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../assets/fonts/Karla-VariableFont_wght.ttf');
+}
+
+
+@media(max-width:375px){
+    
+body .first-last-name{
+    flex-direction: column;
+}
+
+body .first-last-name input{
+    width: 295px;
+
+}
+
+body #email{
+    width: 295px;
+    
+}
+
+    body button{
+        width: 295px;
+        height: 59px;
+    }
+
+    body textarea{
+        width: 295px;
+        height: 240px;
+    }
+
+    body .div-tipo{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    body .label{
+        width: 295px;
+        gap: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    body #success-message{
+        width: 327px;
+        height: 131px;
+    }
+
+}
