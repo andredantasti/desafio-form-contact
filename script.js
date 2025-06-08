@@ -1,59 +1,3 @@
-// const btnEnviar = document.getElementById("btn-submit");
-// console.log(btnEnviar);
-
-// const email = document.getElementById("email");
-// console.log(email);
-
-// const nome = document.getElementById("name");
-// console.log(nome);
-// const sobrenome = document.getElementById("lsat-name");
-// const areaDeTexto = document.getElementById("message-text");
-
-// const form = document.querySelector("form");
-// console.log(form);
-// const input = document.querySelectorAll(".campos");
-// console.log(input);
-// const email = document.querySelectorAll(".email");
-// console.log(email);
-
-// let isValidForm = false;
-
-
-// function validadeInput() {
-//   input.forEach((input, index) => {
-//     if ((!input.value) && (!email.value)){
-//       input.nextElementSibling.classList.remove("error-hidden");
-//       input.classList.add("invalid");
-//       isValidForm = true;
-//     } else {
-//       tirarErro();
-//     }
-//   });
-// }
-
-// function tirarErro() {
-//   input.forEach((input, index) => {
-//     input.addEventListener("input", () => {
-//       if (input.value !== "") {
-//         input.classList.remove("invalid");
-//         input.nextElementSibling.classList.add("error-hidden");
-//       } else {
-//         input.nextElementSibling.classList.remove("error");
-//         input.classList.add("invalid");
-//       }
-//     });
-//   });
-// }
-
-
-
-
-
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   validadeInput()
-  
-// })
 
 const form = document.querySelector("form");
 const inputs = document.querySelectorAll(".campos");
@@ -144,3 +88,4 @@ form.addEventListener("submit", (e) => {
   // form.submit(); // Descomente para envio real
 }
 });
+
